@@ -1,20 +1,22 @@
+// common module import
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView  } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { Amplify } from 'aws-amplify';
-import {
-  withAuthenticator
-} from '@aws-amplify/ui-react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
+// aws authentication modules import
+import { Amplify } from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react-native';
 import awsconfig from './src/aws-exports';
+import HomeScreen from './src/screens/Home';
 Amplify.configure(awsconfig);
 
 function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView>
       <StatusBar style="auto" />
-    </View>
+      <HomeScreen/>
+    </SafeAreaView>
   );
 }
 
