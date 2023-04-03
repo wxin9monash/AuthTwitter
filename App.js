@@ -8,14 +8,23 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { Amplify } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react-native';
 import awsconfig from './src/aws-exports';
-import HomeScreen from './src/screens/Home';
 Amplify.configure(awsconfig);
+
+// import pages
+import HomeScreen from './src/screens/Home';
+import Tweet from './src/components/tweet';
+import SearchResultsScreen from './src/screens/SearchResults';
+import feed from './assets/data/feed';
+
+const tweet1 = feed[0];
 
 function App() {
   return (
     <SafeAreaView>
       <StatusBar style="auto" />
-      <HomeScreen/>
+      {/* <HomeScreen/> */}
+      
+      <Tweet tweet = {tweet1}/>
     </SafeAreaView>
   );
 }
