@@ -2,7 +2,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView  } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import 'react-native-gesture-handler';
 
 // aws authentication modules import
 import { Amplify } from 'aws-amplify';
@@ -17,8 +16,15 @@ function App() {
   return (
     <View>
       <StatusBar style="auto" />
+<<<<<<< HEAD
       <Router/>
     </View>
+=======
+      {/* <HomeScreen/> */}
+      
+      <Tweet tweet = {tweet1}/>
+    </SafeAreaView>
+>>>>>>> parent of 514b7e69... Search result screen
   );
 }
 
