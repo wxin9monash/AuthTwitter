@@ -11,26 +11,12 @@ const Stack = createNativeStackNavigator();
 
 const Router = (props) => {
   return (
-    <NavigationContainer>
-      {/* <Stack.Navigator>
-        <Stack.Screen
-          name = "Home"
-          component={HomeTabNavigator}
-          options={{
-            headerShown: false,
-          }}
-        />
+    <View>
+          <Text>
+            This is a text
+          </Text>
+    </View>
 
-        <Stack.Screen
-          name= "Search"
-          component={SearchResultsScreen}
-          options={{
-            title: "Search your destination"
-          }}
-        />
-      </Stack.Navigator> */}
-      <Text>Test</Text>
-    </NavigationContainer>
   );
 };
 
