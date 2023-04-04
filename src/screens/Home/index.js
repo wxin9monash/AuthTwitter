@@ -12,7 +12,7 @@ const HomeScreen = (props) => {
                 style = {styles.searchButton}
                 onPress = {() => console.warn('Search Button Clicked')}
             >
-                <AntDesign name="search1" size={24} color="f15454" />
+                {/* <AntDesign name="search1" size={24} color="black" /> */}
                 <Text style = {styles.searchButtonText}>What you want to varify</Text>
 
             </Pressable>

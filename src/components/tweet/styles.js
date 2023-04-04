@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
 
     description: {
         fontSize: 16,
-        lineHeight: 24,
+        lineHeight: 22,
     },
 
     sentiment: {

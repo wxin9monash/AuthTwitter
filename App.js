@@ -1,7 +1,7 @@
 // common module import
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView  } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import Navigator from 'react-native'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import 'react-native-gesture-handler';
 
@@ -16,17 +16,19 @@ import HomeScreen from './src/screens/Home';
 import Tweet from './src/components/tweet';
 import SearchResultsScreen from './src/screens/SearchResults';
 import feed from './assets/data/feed';
+import Router from './src/navigation/Router';
 
 const tweet1 = feed[0];
 
 function App() {
   return (
-    <SafeAreaView>
-      <StatusBar style="auto" />
+    <View>
       {/* <HomeScreen/> */}
       {/* <Tweet tweet = {tweet1}/> */}
-      <SearchResultsScreen/>
-    </SafeAreaView>
+      {/* <SearchResultsScreen/> */}
+      <Router />
+      <StatusBar style="auto" />
+    </View>
   );
 }
 

@@ -2,7 +2,7 @@ export default [
     {
         id: '0',
         image: '../../../assets/images/twitter_icon.png',
-        username: 'user0',
+        username: 'user10',
         description: 'description test0',
         sentiment: 'positive',
         credibility: 'credibility test0'
