@@ -1,49 +1,33 @@
-import React from 'react';
-import {View, Text, Image, Pressable} from 'react-native';
-import styles from './styles.js';
-import { useNavigation } from '@react-navigation/native';
-
-const days = 7;
+import React from "react";
+import { View, Text, Image} from 'react-native';
+import styles from "./styles";
 
 const Tweet = (props) => {
+    const tweet = props.tweet;
 
-  const tweet = props.tweet;
+    return(
+        <View style={styles.container}>
+            {/* Image */}
+            <Image 
+                style={styles.image}
+                source ={require('../../../assets/images/twitter_icon.png')}>
+            </Image>
+            
+            {/* User Name */}
+            <Text style={styles.username}>{tweet.username}</Text>
 
-  const navigation = useNavigation();
+            {/* Tweet Description*/}
+            <Text style={styles.description}> {tweet.description}</Text>
 
-  const goTotweetPage = () => {
-    navigation.navigate('tweet', {tweetId: tweet.id});
-  }
+            {/* Sentiment Analysis */}
+            <Text style={styles.sentiment}> {tweet.sentiment}</Text>
 
-  return (
-    <Pressable onPress={goTotweetPage} style={styles.container}>
-      {/* Image  */}
-      <Image
-        style={styles.image}
-        source={{uri: tweet.image}}
-      />
+            {/* Credibility Score */}
+            <Text style={styles.credibility}> {tweet.credibility}</Text>
 
-      {/* Bed & Bedroom  */}
-      <Text style={styles.bedrooms}>
-        {tweet.bed} bed {tweet.bedroom} bedroom
-      </Text>
+        </View>
 
-      {/* Type & Description */}
-      <Text style={styles.description} numberOfLines={2}>
-        {tweet.type}. {tweet.title}
-      </Text>
-
-      {/*  Old price & new price */}
-      <Text style={styles.prices}>
-        <Text style={styles.oldPrice}>${tweet.oldPrice}</Text>
-        <Text style={styles.price}>  ${tweet.newPrice} </Text>
-        / night
-      </Text>
-
-      {/*  Total price */}
-      <Text style={styles.totalPrice}>${tweet.newPrice * days} total</Text>
-    </Pressable>
-  );
+    );
 };
 
-export default tweet;
+export default Tweet;

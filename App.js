@@ -9,6 +9,7 @@ import { withAuthenticator } from '@aws-amplify/ui-react-native';
 import awsconfig from './src/aws-exports';
 import HomeScreen from './src/screens/Home';
 import Router from './src/navigation/Router';
+import SearchResultsScreen from './src/screens/SearchResults';
 Amplify.configure(awsconfig);
 
 
@@ -16,15 +17,9 @@ function App() {
   return (
     <View>
       <StatusBar style="auto" />
-<<<<<<< HEAD
-      <Router/>
+      {/* <Router/> */}
+      <SearchResultsScreen/>
     </View>
-=======
-      {/* <HomeScreen/> */}
-      
-      <Tweet tweet = {tweet1}/>
-    </SafeAreaView>
->>>>>>> parent of 514b7e69... Search result screen
   );
 }
 
