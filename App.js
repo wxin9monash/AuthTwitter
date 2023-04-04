@@ -17,9 +17,16 @@ function App() {
   return (
     <View>
       <StatusBar style="auto" />
+<<<<<<< HEAD
       {/* <Router/> */}
       <SearchResultsScreen/>
     </View>
+=======
+      {/* <HomeScreen/> */}
+      
+      <Tweet tweet = {tweet1}/>
+    </SafeAreaView>
+>>>>>>> parent of 514b7e69... Search result screen
   );
 }
 
