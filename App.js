@@ -9,10 +9,8 @@ import 'react-native-gesture-handler';
 import { Amplify } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react-native';
 import awsconfig from './src/aws-exports';
-Amplify.configure(awsconfig);
-
-// import pages
 import HomeScreen from './src/screens/Home';
+<<<<<<< HEAD
 import Tweet from './src/components/tweet';
 import SearchResultsScreen from './src/screens/SearchResults';
 import feed from './assets/data/feed';
@@ -29,6 +27,16 @@ function App() {
       <Router />
       <StatusBar style="auto" />
     </View>
+=======
+Amplify.configure(awsconfig);
+
+function App() {
+  return (
+    <SafeAreaView>
+      <StatusBar style="auto" />
+      <HomeScreen/>
+    </SafeAreaView>
+>>>>>>> parent of 669c21a1... Tweet info display component
   );
 }
 
