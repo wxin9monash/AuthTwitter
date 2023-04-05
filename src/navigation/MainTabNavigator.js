@@ -4,8 +4,10 @@ import HomeScreen from '../screens/Home';
 import SearchResultsScreen from '../screens/SearchResult';
 import { Ionicons, Entypo } from '@expo/vector-icons';
 import InformationScreen from '../screens/InformationScreen'
+import LiveSearchScreen from '../screens/LiveSearchScreen'
 
 const Tab = createBottomTabNavigator();
+// const Stack = cre
 
 const MainTabNavigator = () => {
   return (
@@ -17,7 +19,7 @@ const MainTabNavigator = () => {
       }}
     >
       <Tab.Screen
-        name="Search"
+        name="HomeScreen"
         component={HomeScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -62,6 +64,7 @@ const MainTabNavigator = () => {
           ),
         })}
       /> */}
+
       <Tab.Screen
         name="Settings"
         component={NotImplementedScreen}

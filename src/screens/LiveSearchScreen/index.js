@@ -36,7 +36,6 @@ const LiveSearchScreen = (props) =>{
 const styles = StyleSheet.create({
     container:{
         margin: 20,
-        alignItems: 'center',
 
     },
     textInput:{

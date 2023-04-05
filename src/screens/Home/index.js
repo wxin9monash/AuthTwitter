@@ -3,14 +3,17 @@ import { ImageBackground, StyleSheet } from "react-native";
 import{ View, Text, Pressable} from 'react-native';
 import styles from "./styles";
 import { AntDesign } from '@expo/vector-icons';
+import { useNavigation } from "@react-navigation/native";
 
 const HomeScreen = (props) => {
+
+    const navigation = useNavigation(); 
     return(
         <View>
             {/* Search bar here*/}
             <Pressable
                 style = {styles.searchButton}
-                onPress = {() => console.warn('Search Button Clicked')}
+                onPress = {() => navigation.navigate('LiveSearch')}
             >
                 <AntDesign name="search1" size={24} color="f15454" />
                 <Text style = {styles.searchButtonText}>What you want to varify</Text>
@@ -26,7 +29,7 @@ const HomeScreen = (props) => {
 
                 <Pressable
                     style={styles.button}
-                    onPress={() => console.warn('Explore Button clicked')}
+                    onPress={() => navigation.navigate('Resources')}
                 >
                     <Text>Explore news Credibility</Text>
 
