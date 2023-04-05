@@ -1,0 +1,51 @@
+[
+    {
+        "id": "0",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/consider_origion.png",
+        "title": "CONSIDER THE ORIGION",
+        "description": "Click away from the story to investigate the site, its mission and contact information."
+    },
+    {
+        "id": "1",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/beyond_reading.png",
+        "title": "BEYOND READING",
+        "description": "To get clicks, the headline may be outrageous. What\"s the whole story? "
+
+    },
+    {
+        "id": "2",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/check_author.png",
+        "title": "CHECK THE AUTHOR",
+        "description": "Do a quick search on the author. Are they credible? Are they real?"
+    },
+    {
+        "id": "3",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/support_source.png",
+        "title": "SUPPORT THE SOURCE?",
+        "description": "Click on these links. Determine if the information provided actually supports the story."
+    },
+    {
+        "id": "4",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/check_date.png",
+        "title": "CHECK THE DATE",
+        "description": "Reprinting old news stories does not mean they are related to current events."
+    },
+    {
+        "id": "5",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/joke.png",
+        "title": "IS IT A JOKE?",
+        "description": "If it's too outrageous, it may be satire. Research the site and the author to be sure."
+    },
+    {
+        "id": "6",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/check_biases.png",
+        "title": "CHECK YOUR BIASES",
+        "description": "Consider whether your own beliefs may influence your judgment."
+    },
+    {
+        "id": "7",
+        "image": "https://authentimages.s3.ap-southeast-2.amazonaws.com/ask_experts.png",
+        "title": "ASK THE EXPERTS",
+        "description": "Ask a librarian, or consult a fact-checking website."
+    }
+]
