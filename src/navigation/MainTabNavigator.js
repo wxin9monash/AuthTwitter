@@ -67,7 +67,7 @@ const MainTabNavigator = () => {
 
       <Tab.Screen
         name="Settings"
-        component={MyComponent}
+        component={NotImplementedScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="settings-outline" size={size} color={color} />
