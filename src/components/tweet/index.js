@@ -23,7 +23,7 @@ const Tweet = (props) => {
             <Text style={styles.sentiment}> {tweet.sentiment}</Text>
 
             {/* Credibility Score */}
-            <Text style={styles.credibility}> {tweet.credibility}</Text>
+            {/* <Text style={styles.credibility}> {tweet.credibility}</Text> */}
 
         </View>
 

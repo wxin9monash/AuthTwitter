@@ -5,9 +5,9 @@ import SearchResultsScreen from '../screens/SearchResult';
 import { Ionicons, Entypo } from '@expo/vector-icons';
 import InformationScreen from '../screens/InformationScreen'
 import LiveSearchScreen from '../screens/LiveSearchScreen'
+import MyComponent from '../screens/test'
 
 const Tab = createBottomTabNavigator();
-// const Stack = cre
 
 const MainTabNavigator = () => {
   return (
@@ -28,7 +28,7 @@ const MainTabNavigator = () => {
           headerShown: false,
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Results"
         component={SearchResultsScreen}
         options={{
@@ -36,7 +36,7 @@ const MainTabNavigator = () => {
             <Ionicons name="laptop-outline" size={size} color={color} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Resources"
         component={InformationScreen}
@@ -67,7 +67,7 @@ const MainTabNavigator = () => {
 
       <Tab.Screen
         name="Settings"
-        component={NotImplementedScreen}
+        component={MyComponent}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="settings-outline" size={size} color={color} />

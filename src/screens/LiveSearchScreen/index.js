@@ -4,21 +4,24 @@ import { StyleSheet } from "react-native";
 import searchResults from '../../../assets/data/search';
 import { useNavigation } from "@react-navigation/native";
 import SearchResultsScreen from '../../screens/SearchResult';
+import HomeScreen from '../Home';
 
 
 const LiveSearchScreen = (props) =>{
 
-    const [inputText, setInputText] = useState('');
     const navigation = useNavigation();
+    const [text, setText] = useState('');
 
     return(
         <View style={styles.container}>
             {/* Input component */}
             <TextInput
                 style={styles.textInput}
-                placeholder="Who do you want to search?"
-                value={inputText}
-                onChangeText={setInputText}
+                placeholder="Enter text for sentiment analyis"
+                value={text}
+                onChangeText={setText}
+                multiline
+                numberOfLines={4}
             />
 
 
@@ -33,11 +36,12 @@ const LiveSearchScreen = (props) =>{
             /> */}
 
             {/* Button to do the search */}
+
             <Pressable 
-                onPress={()=> navigation.navigate(SearchResultsScreen)}
+                onPress={()=> navigation.navigate('Results',{userText: text})}
                 style={{
                     marginBottom: 20,
-                    backgroundColor: 'blue',
+                    backgroundColor: 'lightblue',
                     alignItems: 'center',
                     justifyContent: 'center',
                     height: 50,
