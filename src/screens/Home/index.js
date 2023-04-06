@@ -17,11 +17,10 @@ const HomeScreen = (props) => {
                 onPress = {() => navigation.navigate('LiveSearch')}
             >
                 <AntDesign name="search1" size={24} color="f15454" />
-                <Text style = {styles.searchButtonText}>What you want to varify</Text>
+                <Text style = {styles.searchButtonText}>  Discover Your Tweet's Sentiment!</Text>
 
             </Pressable>
             
-
             {/* background image here */}
             <ImageBackground 
             source ={require('../../../assets/images/background.jpg')} 
@@ -35,13 +34,13 @@ const HomeScreen = (props) => {
 
                 <Text style={styles.title}>AuthentiTweet</Text>
                 <Text style={styles.intro}>Get the facts straight with our app - the ultimate truth detector!</Text>
-                {/* <Pressable
+                <Pressable
                     style={styles.button}
                     onPress={() => navigation.navigate('Resources')}
                 >
-                    <Text>Explore news Credibility</Text>
+                    <Text style = {styles.buttonText}>Explore news Credibility</Text>
 
-                </Pressable> */}
+                </Pressable>
 
             </ImageBackground>
         </View>

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
       }, 
 
       title:{
-        fontSize: 42,
+        fontSize: 40,
         fontWeight: 'bold',
         color: 'white',
         width: '70%',
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         // justifyContent: 'flex-start',
         margin:420,
-        marginTop:-200,
+        marginTop: 0,
         alignSelf: 'center'
         // marginTop: 100,
         // marginHorizontal: 
@@ -52,14 +52,14 @@ const styles = StyleSheet.create({
         width: 200,
         height: 40,
         borderRadius: 5,
-        marginLeft: 25,
-        marginTop: 25,
+        marginTop: 200,
         justifyContent: 'center',
         alignItems: 'center',
+        alignSelf: 'center'
       },
 
       buttonText:{
-        fontSize: 16,
+        fontSize: 14,
         fontWeight: 'bold',
       },
 

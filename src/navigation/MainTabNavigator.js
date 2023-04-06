@@ -65,7 +65,7 @@ const MainTabNavigator = () => {
         })}
       /> */}
 
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Settings"
         component={NotImplementedScreen}
         options={{
@@ -73,7 +73,7 @@ const MainTabNavigator = () => {
             <Ionicons name="settings-outline" size={size} color={color} />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };

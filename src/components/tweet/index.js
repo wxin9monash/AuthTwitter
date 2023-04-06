@@ -26,7 +26,7 @@ const Tweet = (props) => {
           case 'negative':
             return 'red';
           case 'neutral':
-            return 'yellow';
+            return 'darkyellow';
           default:
             return 'green';
         }
