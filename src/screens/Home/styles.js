@@ -1,6 +1,12 @@
 import { StyleSheet,Dimensions } from 'react-native';
 
 const styles = StyleSheet.create({    
+
+    container:{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
     
     background: {
         width: '100%',
@@ -11,11 +17,34 @@ const styles = StyleSheet.create({
       }, 
 
       title:{
-        fontSize: 60,
+        fontSize: 42,
         fontWeight: 'bold',
         color: 'white',
         width: '70%',
-        marginLeft: 25
+        marginLeft: 70,
+        marginTop: -400,
+        textAlign: 'center',
+        // alignContent: 'center'
+      },
+
+      intro:{
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: 'white',
+        textAlign: 'center',
+        marginTop: 20
+      },
+
+      icon:{
+        height: 120,
+        width: 120,
+        resizeMode: 'contain',
+        // justifyContent: 'flex-start',
+        margin:420,
+        marginTop:-200,
+        alignSelf: 'center'
+        // marginTop: 100,
+        // marginHorizontal: 
       },
 
       button:{
@@ -44,7 +73,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
-        top: 50,
+        top: 480,
         zIndex: 100,
       },
 

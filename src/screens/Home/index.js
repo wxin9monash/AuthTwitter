@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageBackground, StyleSheet } from "react-native";
-import{ View, Text, Pressable} from 'react-native';
+import{ View, Text, Pressable, Image} from 'react-native';
 import styles from "./styles";
 import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from "@react-navigation/native";
@@ -9,7 +9,8 @@ const HomeScreen = (props) => {
 
     const navigation = useNavigation(); 
     return(
-        <View>
+        <View style={styles.container}>
+
             {/* Search bar here*/}
             <Pressable
                 style = {styles.searchButton}
@@ -19,21 +20,28 @@ const HomeScreen = (props) => {
                 <Text style = {styles.searchButtonText}>What you want to varify</Text>
 
             </Pressable>
+            
 
             {/* background image here */}
             <ImageBackground 
             source ={require('../../../assets/images/background.jpg')} 
             style={styles.background}>
 
-                <Text style={styles.title}>More Info</Text>
+                {/* App icon image*/}
+                <Image
+                    source = {require('../../../assets/app_icon.png')}
+                    style={styles.icon}
+                />
 
-                <Pressable
+                <Text style={styles.title}>AuthentiTweet</Text>
+                <Text style={styles.intro}>Get the facts straight with our app - the ultimate truth detector!</Text>
+                {/* <Pressable
                     style={styles.button}
                     onPress={() => navigation.navigate('Resources')}
                 >
                     <Text>Explore news Credibility</Text>
 
-                </Pressable>
+                </Pressable> */}
 
             </ImageBackground>
         </View>
