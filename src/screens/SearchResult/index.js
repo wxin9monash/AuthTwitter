@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList} from 'react-native';
-import Tweet from "../../components/Tweet";
+import Tweet from "../../components/tweet";
 import feed from "../../../assets/data/feed";
 import axios from 'axios';
 
